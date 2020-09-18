@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0;
+    width: 100%
+}
+
+@import url('https://fonts.googleapis.com/css?family=orbitron&display=swap');
+html {
+    width: 100%;
+    overflow-x: hidden
+}
+
+body {
+    margin: 0em;
+    overflow-x: hidden;
+    background-color: #EDEDED
+}
+
+.top {
+    margin-top: 1em
+}
+
+.top1 {
+    border-right: 2px #FFDBAE solid;
+}
+
+.top1>a {
+    position: relative;
+    left: 90%;
+    color: #FFDBAE !important;
+}
+
+.top2>a {
+    position: relative;
+    left: 30%;
+    color: #FFDBAE !important;
+}
+
+br {
+    display: block;
+    margin: -5px 0
+}
+
+.balance {
+    margin-top: 1em
+}
+
+.balance>.col-lg-8>a {
+    position: relative;
+    left: 10%;
+    color: dimgrey !important;
+}
+
+.balance>.col-8>p {
+    position: relative;
+    left: 10%
+}
+
+.balance>.col-4>.wrapper {
+    width: 6.5em;
+}
+
+.balance>.col-4>.wrapper>a>button {
+    font-size: 0.93rem;
+    background-color: orangered;
+    color: white !important;
+    margin-top: 1em;
+}
+
+.main>.col-lg-6 {
+    margin-top: 4em
+}
+
+.main>.col-lg-6>a>.wrapper {
+    min-height: 6em;
+    background-color: #f47749;
+    width: 70%;
+    border-radius: 1em 0.5em 0.5em 2em;
+    box-shadow: 4px 4px 4px 0.05px #dedede
+}
+
+.main>.col-lg-6>a>.wrapper>.icon {
+    width: 10%;
+    position: relative;
+    left: 20%;
+    top: 25%;
+    text-align: center;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%
+}
+.main>.col-lg-6>a>.wrapper>.icon>i{
+  color: #f47749 !important;
+}
+.main>.col-lg-6>a>.wrapper>p {
+    text-align: center;
+    margin-top: 1.5em
+}
+
+.navbar {
+    background-color: #fff;
+    min-height: 4em;
+    width: 100%;
+}
