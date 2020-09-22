@@ -27,7 +27,7 @@ body {
 }
 .logo{
    height: 4em;
-   background-color: orangered;
+   background-color: #c3083f;
    margin-bottom: 3em
 }
 .intro{
@@ -38,7 +38,7 @@ body {
     margin-bottom: 2em
 }
 .intro>a{
-    color: orangered !important;
+    color: #950741 !important;
     
 }
 form{
@@ -53,7 +53,7 @@ form{
 }
 button{
  width: 7em ;
- background-color: orangered !important;
+ background-color: #c3083f !important;
     color: white !important;
 }
 input{
@@ -68,12 +68,19 @@ input{
     
 }
 .create>a{
-    color: orangered !important;
+    color: #950741 !important;
 }
-.icon1,.icon2{
-   text-align: center ;
-    color: orangered;
+.icon1{
+   text-align: right ;
+    color: #c3083f;
+}
+.icon2{
+   text-align: left ;
+    color: #c3083f;
 }
 .icon1>a,.icon2>a{
-   color: orangered !important; 
+   color: #c3083f !important; 
+}
+.icon2>a>i{
+    margin-left: 1.2em
 }
