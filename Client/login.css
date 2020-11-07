@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0;
+    width: 100%
+}
+
+@import url('https://fonts.googleapis.com/css?family=orbitron&display=swap');
+html {
+    width: 100%;
+    overflow-x: hidden
+}
+
+body {
+    margin: 0em;
+    overflow-x: hidden;
+    background-color: whitesmoke
+}
+.logo{
+   height: 4em;
+   background-color: orangered;
+   margin-bottom: 3em
+}
+.intro{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.intro>p{
+    margin-bottom: 2em
+}
+.intro>a{
+    color: orangered !important;
+    
+}
+form{
+    margin: 0 auto;
+}
+.form-group{
+    margin: 2em
+}
+.wrapper{
+    margin: 0 auto;
+    width: 7em
+}
+button{
+ width: 7em ;
+ background-color: orangered !important;
+    color: white !important;
+}
+input{
+  box-shadow:  4px 4px 4px 0.05px #e5e4e2;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke !important;
+}
+.create{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    
+}
+.create>a{
+    color: orangered !important;
+}
+.icon1,.icon2{
+   text-align: center ;
+    color: orangered;
+}
+.icon1>a,.icon2>a{
+   color: orangered !important; 
+}
