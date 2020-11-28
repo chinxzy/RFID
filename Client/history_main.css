@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0;
+    width: 100%
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+html {
+    width: 100%;
+    overflow-x: hidden
+}
+
+body {
+    margin: 0em;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.navbar {
+    background-color: black;
+    min-height: 4em;
+    width: 100%;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.navbar>img{
+    height: 4em
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link>i {
+    margin-right: 1em
+}
+
+.nav-link:hover {
+    background: #fff;
+    color: #000;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff!important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #000;
+}
+
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.top{
+    height: 7em;
+    margin-top: 4em
+}
+.top>.col-3>img{
+    position: absolute
+}
+.top>.col-sm-9>p1{
+    position: relative;
+    left: 4em;
+    top: 0.2em;
+    font-weight: bold
+}
+.top>.col-sm-9>p2{
+    position: relative;
+    top: 4.2em;
+    right: 1em;
+    font-weight: bold
+}
+.map{
+    background-color: black;
+}
+.info{
+    margin-top:1.5em;
+    border-bottom: 2px solid whitesmoke;
+    padding: 0.5em
+}
+.info>.col-4>.img-fluid{
+   border-radius: 50%
+}
+.info>.col-8{
+    margin-top: 0em
+}
+
+.info>.col-8>p1{
+    font-weight: bolder
+}
+.info>.col-8>p2{
+    color: gray;
+}
+.payment{
+     border-bottom: 2px solid whitesmoke;
+    padding: 1em;
+    color: #fc8053 !important
+}
+.payment>.col-4{
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9em
+}
+.payment>.col-8{
+    text-align: right;
+    font-weight: bold;
+    font-size: 0.9em
+}
+.receipt{
+    border-bottom: 2px solid whitesmoke;
+    padding: 1em;
+    color: #fc8053 !important
+}
+.receipt>.col-4{
+    text-align: right;
+     font-weight: bold
+}
+.receipt>.col-lg-8{
+    font-weight: bold
+}
+.misconduct{
+    border-bottom: 2px solid whitesmoke;
+    padding: 1em;
+    color: #fc8053 !important
+}
+.misconduct>.col-4{
+    text-align: right;
+     font-weight: bold
+}
+.misconduct>.col-8{
+    font-weight: bold
+}
+.lost{
+    border-bottom: 2px solid whitesmoke;
+    padding: 1em;
+    color: #fc8053 !important
+}
+.lost>.col-4{
+    text-align: right;
+    font-weight: bold
+}
+.lost>.col-8{
+    font-weight: bold
+}
+.col-sm-4>a{
+    color: #fc8053 !important;
+    font-weight: bold;
+}
+.col-sm-4>a:hover{
+    text-decoration: none
+}
+.request>.modal-dialog{
+    height: 19em;
+    background: transparent !important;
+    margin-top: 14em
+}
+.driver>.modal-dialog{
+    height: 33em;
+    margin-top: 6em
+}
+.lost_item>.modal-dialog{
+    height: 33em;
+    margin-top: 6em
+}

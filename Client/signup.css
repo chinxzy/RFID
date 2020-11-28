@@ -14,7 +14,7 @@
     width: 100%
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=orbitron&display=swap');
 html {
     width: 100%;
     overflow-x: hidden
@@ -23,10 +23,8 @@ html {
 body {
     margin: 0em;
     overflow-x: hidden;
-    background-color: #fff;
-    font-family: 'Raleway', sans-serif !important;
+    background-color: #fff
 }
-
 
 .navbar {
     background-color: black;
@@ -73,58 +71,39 @@ body {
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.about{
-	margin-top: 4em ;
-	padding: 1em;
-	position: relative;
-}
-.intro{
-    text-align: center;
-    margin-bottom: 2em;
-}
-.intro>p{
-    margin-bottom: 2em
-}
-.intro>a{
-    color: orangered !important;
+#wrap{
+   margin-top: 5em
+    }
+    legend{
+        color:#141823;
+        font-size:25px;
+        font-weight:bold;
+    }
+    .signup-btn {
+      border-radius: 4px;
+      text-shadow: 0px 1px 0px #898a88;
+      box-shadow: 0px 0px 0px #a4e388;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+      border: solid orangered 1px !important;
+      text-decoration: none;
+      background-color: orangered !important;
+    }
     
-}
-form{
-    margin: 0 auto;
-    width: 20em
-}
-.form-group{
-    margin: 2em
-}
-.wrapper{
-    margin: 0 auto;
-    width: 7em
-}
-.btn{
- width: 7em ;
- background-color: orangered !important;
-    color: white !important;
-    margin-top: 1em !important;
-}
-input{
-  box-shadow:  4px 4px 4px 0.05px #e5e4e2;
-  background-color: whitesmoke;
-  border: 1px solid whitesmoke !important;
-    
-}
-.create{
-    text-align: center;
-    margin-top: 5em;
-    
-}
-.icon1{
-   text-align: right ;
-    color: orangered;
-}
-.icon2{
-    text-align: left;
-    color: orangered;
-}
-.icon1>a,.icon2>a{
-   color: orangered !important; 
-}
+    .signup-btn:hover {
+      text-decoration: none;
+    }
+  
+    .form .form-control { margin: 1em; }
+    @media (min-width:768px) {
+        #home{
+            margin-top:50px;
+        }
+        #home .slogan{
+            color: #0e385f;
+            line-height: 29px;
+            font-weight:bold;
+        }
+    }
