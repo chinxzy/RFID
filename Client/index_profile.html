@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profil_index.css">
+
+    <script src="Admin/Client-Server.js"></script>
+</head>
+
+<body onload = 'ProfileOnLoad()'>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">RFID</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"><i class="fa fa-info"></i>About-Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><i class="fa fa-id-card"></i>Contact-Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html"><i class="fa fa-sign"></i>Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    <div class="row">
+        <!--top div-->
+        <div class="container-fluid top">
+            <div class="col-1g-10 col-md-10 col-sm-10 col-10 top1">
+                <a href="#">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2 top2">
+                <a href="#">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--balance and add money-->
+        <div class="container-fluid balance">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                <p>₦<b id ="AcctBalance">0.00</b></p><br> <a href="#"><i class="fa fa-eye-slash" aria-hidden="true">Hide balance</i></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="wrapper m-auto">
+                    <a href="add_money.html"><button class="btn">Add Money</button></a>
+                </div>
+            </div>
+        </div>
+        <!--main page-->
+        <div class="container main">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <a href="book_ride.html">
+                    <div class="wrapper m-auto">
+                        <div class="small-box bg-orange">
+                          <div class="icon">
+                            <i class="fa fa-bus"></i>
+                          </div>
+                            <div class="inner">
+                              <h6>Book Ride</h6>
+                            </div>
+                          </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <a href="history.html">
+                <div class="wrapper m-auto">
+                    <div class="small-box bg-orange">
+                      <div class="icon">
+                        <i class="fa fa-history"></i>
+                      </div>
+                        <div class="inner">
+                          <h6>History</h6>
+                        </div>
+                      </div>
+                </div>
+            </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <a href="trans.html">
+                <div class="wrapper m-auto">
+                    <div class="small-box bg-orange">
+                      <div class="icon">
+                        <i class="fa fa-scroll"></i>
+                      </div>
+                        <div class="inner">
+                          <h6>Transactions</h6>
+                        </div>
+                      </div>
+                </div>
+            </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <a href="profile.html">
+                <div class="wrapper m-auto">
+                    <div class="small-box bg-orange">
+                      <div class="icon">
+                        <i class="fa fa-id-card"></i>
+                      </div>
+                        <div class="inner">
+                          <h6>Profile</h6>
+                        </div>
+                      </div>
+                </div>
+            </a>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src= 
+  "https://code.jquery.com/jquery-3.2.1.slim.min.js"> 
+    </script> 
+      <script src= 
+  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> 
+    </script> 
+      <script src= 
+   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> 
+    </script>
+    <script src="" async defer></script>
+</body>
+
+</html>

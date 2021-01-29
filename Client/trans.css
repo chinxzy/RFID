@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0;
+    width: 100%
+}
+
+@import url('https://fonts.googleapis.com/css?family=orbitron&display=swap');
+html {
+    width: 100%;
+    overflow-x: hidden
+}
+
+body {
+    margin: 0em;
+    overflow-x: hidden;
+    background-color: #fff
+}
+
+.navbar {
+    background-color: black;
+    min-height: 4em;
+    width: 100%;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.navbar>img{
+    height: 4em
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link>i {
+    margin-right: 1em
+}
+
+.nav-link:hover {
+    background: #fff;
+    color: #000;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff!important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #000;
+}
+
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.main{
+    margin-top: 1.5em
+}
+.modal{
+    height: 40em !important;
+}
+.modal-content{
+    height: 30em !important;
+}
+.pagination>li{
+    border: 1px solid orangered;
+    padding: 0.4em
+    
+        
+}
+.pagination>li>a{
+    color: black
+}
+.btn-xs{
+    background-color: orangered !important;
+}
