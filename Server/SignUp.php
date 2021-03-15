@@ -1,7 +1,6 @@
 <?php
        session_start();
        require_once 'Dependencies.php';
-       require_once 'PHPMailer/PHPMailerAutoload.php';
 
        header("Content-Type: application/json; charset=UTF-8");
        $UserInfo=json_decode($_POST["x"], false);

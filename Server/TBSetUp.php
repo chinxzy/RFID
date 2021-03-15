@@ -41,7 +41,9 @@
                     
     CreateTable( 'BusData',
                     'BusName VARCHAR(255),
-                     Route VARCHAR(255)'
+                     Route VARCHAR(255),
+                     TotalPassengers INT UNSIGNED,
+                     EWallet DECIMAL(10,2)'
                  );         
 ?>
 

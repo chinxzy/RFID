@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <script src="Admin/Client-Server.js"></script>
+    <script src="Client-Server-User.js"></script>
 </head>
 
-<body>
+<body onload="TravelHistory();">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="history_main.html">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -62,7 +62,7 @@
             </nav> 
               <!--main body-->
             <div class="container main">
-                <div class="row">
+                <div class="row" id="TravelHistoryTable">
                   <!--history rows-->
                   <div class="col-12 menu">
                     <div class="col-12"><h5>Ipaja - Lekki</h5></div>

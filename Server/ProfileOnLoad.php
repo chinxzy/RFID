@@ -11,6 +11,12 @@
       if($Result->num_rows)
       {
         $Amount = $Fetch['EWallet'];
-        echo json_encode($Amount);
+        $ID = $Fetch['UserId'];
+        $FirstName = $Fetch['FirstName'];
+        $LastName = $Fetch['LastName'];
+        $Email = $Fetch['Email'];
+        $Phone = $Fetch['Phone'];
+
+        echo json_encode(array("Balance"=>$Amount , "ID"=> $ID, "FirstName" => $FirstName, "LastName" => $LastName, "Email" => $Email, "Phone" => $Phone));
       }
 ?>

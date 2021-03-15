@@ -82,7 +82,7 @@ function SignupHandler()
    
     XmlHttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200)
-    {
+    { 
         S_Response = JSON.parse(this.responseText);
         myObj = JSON.parse(this.responseText);
         if (S_Response[0]['FirstName'] == false)
@@ -104,25 +104,6 @@ function SignupHandler()
     XmlHttp.send("x=" + DbParam);
 
     return false;
-}
-
-function ProfileOnLoad()
-{
-   var Obj, DbParam, XmlHttp;
-
-		DbParam = JSON.stringify(Obj);
-		XmlHttp = new XMLHttpRequest(); 
-	
-		XmlHttp.onreadystatechange = function() {
-		    if (this.readyState == 4 && this.status == 200)
-		    {
-		        S_Response = JSON.parse(this.responseText);
-                document.getElementById("AcctBalance").innerHTML = " " + S_Response;
-		    }
-		};
-    XmlHttp.open("POST", "../Server/ProfileOnLoad.php", true);
-    XmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    XmlHttp.send("x=" + DbParam);
 }
 
 function UserDataTableOnLoad()

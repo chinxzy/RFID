@@ -1,7 +1,12 @@
 <?php 
     session_start();
     require_once 'Dependencies.php';
-    require_once 'PHPMailer/PHPMailerAutoload.php';
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    //Load Composer's autoloader
+    require 'PHPMailer/vendor/autoload.php';
     
 	$Email= $_GET['Email'];
 	$ConfirmationKey= $_GET['Key'];

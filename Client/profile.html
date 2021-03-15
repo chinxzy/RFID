@@ -22,9 +22,11 @@
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="Client-Server-User.js"></script>
 </head>
 
-<body>
+<body onload="ProfileOnLoad();">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -70,10 +72,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="profile-head">
-                                        <h5>
+                                        <h5 id="HFL">
                                             Chinedu Anyanwu
                                         </h5>
-                                        <h6>
+                                        <h6 id="HID">
                                             chinxzy123
                                         </h6>
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -98,11 +100,13 @@
                                 <a href="">#3000</a><br/>
                                 <a href="">#50000</a>
                                 <p>Ride History</p>
-                                <a href="">Bus 10 : berger - ipaja</a><br/>
-                                <a href="">Bus 2 : oworo - yaba</a><br/>
-                                <a href="">Bus 2 : oworo - yaba</a><br/>
-                                <a href="">Bus 2 : oworo - yaba</a><br/>
-                                <a href="">Bus 2 : oworo - yaba</a><br/>
+                                <div id="TravelHistoryTable">
+                                    <a href="">berger - ipaja</a><br />
+                                    <a href="">oworo - yaba</a><br />
+                                    <a href="">oworo - yaba</a><br />
+                                    <a href="">oworo - yaba</a><br />
+                                    <a href="">oworo - yaba</a><br />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-8">

@@ -7,6 +7,11 @@
        $ObjInstance = json_decode($_POST["x"], false);
        $UserID = $ObjInstance->UserID;
        
+	   if($UserID == "Empty")
+	   {
+		 $UserID = $_SESSION['UserId'];
+	   }
+
 	  $Result = $Connection->query("SELECT * FROM TravelHistory WHERE UserId = '$UserID' ORDER BY CurrentTime DESC");
 	  $Data = array();
 	  $FillIndex = 0;

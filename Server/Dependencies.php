@@ -31,7 +31,7 @@
     global $Connection;
     $var = strip_tags($var);
     $var = htmlentities($var);
-    if (get_magic_quotes_gpc())
+    //if (get_magic_quotes_gpc())
       $var = stripslashes($var);
     return $Connection->real_escape_string($var);
   }

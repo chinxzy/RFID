@@ -14,7 +14,7 @@
 	     {
 		     $Row = $Result->fetch_array(MYSQLI_ASSOC);
 				 $Data[$FillIndex] = array('BusName'=>$Row['BusName'] , 'Route'=>$Row['Route'] ,
-                                           'TotalPassengers'=>0,        'TotalAmount'=>0);
+                                           'TotalPassengers'=>$Row['TotalPassengers'], 'TotalAmount'=>$Row['EWallet']);
             
 		     $FillIndex++;
 		 }
