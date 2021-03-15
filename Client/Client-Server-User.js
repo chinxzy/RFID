@@ -128,3 +128,26 @@ function ProfileTravelHistory() {
     XmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     XmlHttp.send("x=" + DbParam);
 }
+
+function LoginBouncer() {
+    var Obj, DbParam, XmlHttp;
+
+    XmlHttp = new XMLHttpRequest();
+
+    XmlHttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            S_Response = JSON.parse(this.responseText);
+            if (!S_Response) {
+                window.location.href = "index.html";
+            }
+        }
+    };
+
+    XmlHttp.open("POST", "../Server/LoginSessionCheck.php", true);
+    XmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    XmlHttp.send("x=" + DbParam);
+
+    return false;
+}
+
+LoginBouncer();

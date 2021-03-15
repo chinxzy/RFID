@@ -10,6 +10,8 @@
 <?php 
   require_once 'Dependencies.php';
 
+  DestroySession();
+
   CreateTable( 'UserInfo',
                  'UserId VARCHAR(255),
 			            FirstName VARCHAR(255),

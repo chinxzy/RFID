@@ -12,7 +12,10 @@ function LoginHandler()
 	
 		XmlHttp.onreadystatechange = function() {
 		    if (this.readyState == 4 && this.status == 200)
-		    {
+            {
+                if (this.responseText == "Admin")
+                    window.location.href = "Admin/AdminDB.html";
+
 		        S_Response = JSON.parse(this.responseText);
 		        if (S_Response['Check'] == false)
 		            document.getElementById("ErrorMessage").innerHTML = '<h5 style="color:red">' + S_Response['Info'] + '</h5>';
@@ -396,3 +399,27 @@ XmlHttp.send("x=" + DbParam);
 
 return false;
 }
+
+function LoginBouncer() {
+    var Obj, DbParam, XmlHttp;
+    
+    XmlHttp = new XMLHttpRequest();
+
+    XmlHttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            S_Response = JSON.parse(this.responseText);
+            if (!S_Response)
+            {
+                window.location.href = "../index.html";
+            }
+        }
+    };
+
+    XmlHttp.open("POST", "../../Server/LoginSessionCheck.php", true);
+    XmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    XmlHttp.send("x=" + DbParam);
+
+    return false;
+}
+
+LoginBouncer();

@@ -27,7 +27,7 @@
     $mail->addAddress("$Email",'New User'); 
     $mail->Subject = 'Signup Email Confirmation';
     $mail->Body    = "Click on the button to complete the registration process 
-					   <a href='localhost/!Project/Server/EmailConfirmation.php?ConfirmationKey=$ConfirmationKey' style='color=white !important; text-decoration:none; padding:13px;'>
+					   <a href='localhost/RFID/Server/EmailConfirmation.php?ConfirmationKey=$ConfirmationKey' style='color=white !important; text-decoration:none; padding:13px;'>
 					   Click
 					   </a>";
 
