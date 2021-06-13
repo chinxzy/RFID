@@ -2,7 +2,7 @@
      header("Access-Control-Allow-Origin: *");
      session_start();
 
-     if(!isset($_GET['busid']) || !isset($_GET['userid']))
+     if(empty($_GET['busid']) || empty($_GET['userid']))
      {
         $BusName = $_GET['busid'];
         $UserID = $_GET['userid'];
