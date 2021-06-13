@@ -1,6 +1,6 @@
 <?php
-     header("Access-Control-Allow-Origin: *");
-     session_start();
+    // header("Access-Control-Allow-Origin: *");
+     //session_start();
 
   
         $BusName = $_POST['busid'];
