@@ -2,10 +2,10 @@
      header("Access-Control-Allow-Origin: *");
      session_start();
 
-     if(empty($_GET['busid']) || empty($_GET['userid']))
+     if(isset($_POST['busid']) || isset($_POST['userid']))
      {
-        $BusName = $_GET['busid'];
-        $UserID = $_GET['userid'];
+        $BusName = $_POST['busid'];
+        $UserID = $_POST['userid'];
 
         echo 'Test::Data Received :: BusName=> ' . $BusName . ' UserID=> ' . $UserID;
      }
