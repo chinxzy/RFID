@@ -1,11 +1,17 @@
 <?php
-    // header("Access-Control-Allow-Origin: *");
-     //session_start();
-     header("Content-Type: application/json; charset=UTF-8");
-  
+     header("Access-Control-Allow-Origin: *");
+     session_start();
+
+     if(empty($_GET['busid']) || empty($_GET['userid']))
+     {
         $BusName = $_GET['busid'];
         $UserID = $_GET['userid'];
 
-        echo 'Test::Data Received :: BusName=> ' . $_GET['busid'] . ' UserID=> ' . $_GET['userid'];
-  
+        echo 'Test::Data Success :: BusName=> ' . $BusName . ' UserID=> ' . $UserID;
+     }
+
+     else 
+     {
+          echo 'Response::Error';
+     }
 ?>
