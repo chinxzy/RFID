@@ -6,6 +6,6 @@
         $BusName = $_POST['busid'];
         $UserID = $_POST['userid'];
 
-        echo 'Test::Data Received :: BusName=> ' . $BusName . ' UserID=> ' . $UserID;
+        echo 'Test::Data Received :: BusName=> ' . $_POST['busid'] . ' UserID=> ' . $_POST['userid'];
   
 ?>
