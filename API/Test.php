@@ -14,6 +14,4 @@
      {
           echo 'Response::Error'
      }
-}
-
 ?>
