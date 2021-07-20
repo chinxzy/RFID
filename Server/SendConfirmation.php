@@ -47,7 +47,7 @@
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "POST",
-    CURLOPT_POSTFIELDS =>"{\"recipients\":[{\"email\":\"test@trustificorp.org\"}],\"title\":\"Title\",\"html\":\"Body\"}",
+    CURLOPT_POSTFIELDS =>"{\"recipients\":[{\"email\":\"harlexibeh01@gmail\"}],\"title\":\"Title\",\"html\":\"Body\"}",
     CURLOPT_HTTPHEADER => array(
         "x-trustifi-key: " . $_ENV['TRUSTIFI_KEY'],
         "x-trustifi-secret: " . $_ENV['TRUSTIFI_SECRET'],
