@@ -53,7 +53,7 @@ function NewUserSetPassword()
 		    {
 		        S_Response = JSON.parse(this.responseText);
 		        if (S_Response === true){
-                    window.location.href = "index.html";
+                    window.location.href = "../index.html";
                 }
                   
 		        else{
