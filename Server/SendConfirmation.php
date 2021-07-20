@@ -20,8 +20,8 @@
     $mail->SMTPAuth = true;
     $mail->Username = 'harlexibeh04@gmail.com';
     $mail->Password = 'Nickelodeo';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
     $mail->IsHTML(true);
     $mail->setFrom('harlexibeh04@gmail.com', 'TransportProject');
     $mail->addAddress("$Email",'New User'); 
