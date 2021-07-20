@@ -421,5 +421,3 @@ function LoginBouncer() {
 
     return false;
 }
-
-LoginBouncer();
