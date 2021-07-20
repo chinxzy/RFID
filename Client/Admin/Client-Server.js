@@ -77,7 +77,8 @@ function SignupHandler()
             "FirstName": document.getElementsByName("UserInfo")[0].value,
             "LastName": document.getElementsByName("UserInfo")[1].value,
             "Email": document.getElementsByName("UserInfo")[2].value,
-            "Phone": document.getElementsByName("UserInfo")[3].value
+            "Phone": document.getElementsByName("UserInfo")[3].value,
+            "CardID": document.getElementsByName("UserInfo")[4].value
 		   };
 
      DbParam = JSON.stringify(Obj);

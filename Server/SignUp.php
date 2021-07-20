@@ -7,7 +7,7 @@
 
 	   $FirstName = SanitizeString($UserInfo->FirstName);
 	   $LastName = SanitizeString($UserInfo->LastName);
-       $UserId =   md5($UserInfo->Email);
+       $UserId =   $UserInfo->CardID;
        $Password = password_hash(md5(rand()),PASSWORD_DEFAULT); #Default Password used
        $Email =    $UserInfo->Email;
 	   $Phone =    $UserInfo->Phone;
