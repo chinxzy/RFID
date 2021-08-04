@@ -138,7 +138,7 @@ function LoginBouncer() {
         if (this.readyState == 4 && this.status == 200) {
             S_Response = JSON.parse(this.responseText);
             if (!S_Response) {
-                window.location.href = "index.html";
+                window.location.href = "login.html";
             }
         }
     };
