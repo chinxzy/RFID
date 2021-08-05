@@ -90,13 +90,17 @@ body {
 .head>h4{
     color: #FFFF00;
     font-weight: bold;
-    margin-bottom: 2em
+    margin-bottom:3em
+}
+.place{
+    margin-bottom: 0em
 }
 table{
     background-color: white;
     border-color: white !important;
-    width: 40em !important;
-    text-align: center
+    max-width: 40em !important;
+    text-align: center;
+    line-height: 1px !important;
 }
 tr,td,th{
     border-color: white !important;
@@ -108,4 +112,31 @@ tr,td,th{
 }
 .tag1{
     font-size: 0.8em
+}
+.date{
+    position: relative;
+    bottom: 1em;
+    left: 15em;
+    border-top: 1px solid grey
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url("images/rsz_pexels-david-geib-32208612.jpg");
+         }
+    table{
+    max-width: 15em !important;
+        
+    }
+    .tag{
+        font-size: 1em
+    }
+    .date{
+        position: relative;
+        left: 6em
+    }
+}
+@media only screen and (max-width: 768px){
+    body{
+        background-image: url("images/rsz_pexels-david-geib-32208613.jpg");
+    }
 }
