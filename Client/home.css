@@ -139,4 +139,15 @@ tr,td,th{
     body{
         background-image: url("images/rsz_pexels-david-geib-32208613.jpg");
     }
+    table{
+    max-width: 25em !important;
+        
+    }
+    .tag{
+        font-size: 1em
+    }
+    .date{
+        position: relative;
+        left: 12em
+    }
 }
