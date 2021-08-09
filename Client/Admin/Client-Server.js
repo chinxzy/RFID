@@ -14,13 +14,13 @@ function LoginHandler()
 		    if (this.readyState == 4 && this.status == 200)
             {
                 if (this.responseText == "Admin")
-                    window.location.href = "Client/Admin/AdminDB.html";
+                    window.location.href = "Admin/AdminDB.html";
 
 		        S_Response = JSON.parse(this.responseText);
 		        if (S_Response['Check'] == false)
 		            document.getElementById("ErrorMessage").innerHTML = '<h5 style="color:red">' + S_Response['Info'] + '</h5>';
 		        else
-		            window.location.href = "Client/index_profile.html";
+		            window.location.href = "index_profile.html";
 		    }
         };
         
