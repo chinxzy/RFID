@@ -3,9 +3,8 @@
     "",
     "\\API",
     "\\Client",
-    "\\Client\\Admin",
     "\\Server"
   ],
-  "SelectedNode": "\\Server\\SignUp.php",
+  "SelectedNode": "\\Client",
   "PreviewInSolutionExplorer": false
 }
