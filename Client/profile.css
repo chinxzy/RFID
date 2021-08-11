@@ -168,3 +168,9 @@ body {
     height: 60%;
     width: 60%
 }
+.col-md-3>.btn{
+    background-color: orangered;
+    color: white;
+    position: relative;
+    right: 3em
+}
