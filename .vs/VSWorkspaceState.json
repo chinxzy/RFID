@@ -3,8 +3,9 @@
     "",
     "\\API",
     "\\Client",
+    "\\Client\\Admin",
     "\\Server"
   ],
-  "SelectedNode": "\\Client",
+  "SelectedNode": "\\Client\\Admin\\Client-Server.js",
   "PreviewInSolutionExplorer": false
 }

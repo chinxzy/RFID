@@ -124,7 +124,7 @@ function UserDataTableOnLoad()
        S_Response = JSON.parse(this.responseText);
        for(var i = 0; i < S_Response.length; i++ )
        {
-           document.getElementById("LoadUserTable").innerHTML += "<tr onclick = 'TravelHistoryUpdate(\""+ S_Response[i]['UserID'] + "\")' style = 'cursor: pointer;' data-toggle = 'modal' data-target='#modal-default'>" + 
+           document.getElementById("LoadUserTable").innerHTML += "<tr onclick = 'TravelHistoryUpdate(\"" + JSON.stringify(Response[i]['UserID']) + "\")' style = 'cursor: pointer;' data-toggle = 'modal' data-target='#modal-default'>" +
                                                                      '<td>' + S_Response[i]['UserID'] + '</td>' +
                                                                      '<td>' + S_Response[i]['FirstName'] + '&nbsp' + S_Response[i]['LastName'] + '</td>' +
                                                                      '<td>' + S_Response[i]['Email'] + '</td>' + 
@@ -145,7 +145,7 @@ function TravelHistoryUpdate(UserID)
     var Obj, DbParam, XmlHttp;
 
     Obj = {
-        "UserID": UserID
+        "UserID": JSON.parse(UserID)
     };
 
     DbParam = JSON.stringify(Obj);
