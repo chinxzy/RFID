@@ -46,7 +46,7 @@
         $Connection->query("UPDATE UserInfo SET EWallet = $Amount WHERE UserId = '$UserID'");
 
         $Sql = "INSERT INTO  TravelHistory (UserId, Route, BusName, CurrentTime) 
-        VALUES ('90dbe5d88ebfe7ddb19994ca867bdfe2', '$RouteName' , '$BusName', NOW())";
+        VALUES ('$UserID' , '$RouteName' , '$BusName', NOW())";
         $Connection->query($Sql);
 
         $num_of_passengers = intval($BusDataRow['TotalPassengers']);
