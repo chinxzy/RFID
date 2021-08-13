@@ -120,6 +120,7 @@ function UserDataTableOnLoad()
    XmlHttp.onreadystatechange = function() {
    if (this.readyState == 4 && this.status == 200)
    {
+       alert(this.responsText);
        document.getElementById("LoadUserTable").innerHTML = "";
        S_Response = JSON.parse(this.responseText);
        for(var i = 0; i < S_Response.length; i++ )
@@ -154,7 +155,6 @@ function TravelHistoryUpdate(UserID)
    XmlHttp.onreadystatechange = function() {
    if (this.readyState == 4 && this.status == 200)
    {
-       alert(this.responsText);
        S_Response = JSON.parse(this.responseText);
        document.getElementsByClassName("modal-title")[0].innerHTML = 'Travel History: User <span style="color:green">' + 
                                                                       S_Response[0]['UserID'] + '</div>';
