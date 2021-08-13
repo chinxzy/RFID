@@ -124,7 +124,7 @@ function UserDataTableOnLoad()
        S_Response = JSON.parse(this.responseText);
        for(var i = 0; i < S_Response.length; i++ )
        {
-           document.getElementById("LoadUserTable").innerHTML += "<tr onclick = 'TravelHistoryUpdate(\"" + Response[i]['UserID'] + "\")' style = 'cursor: pointer;' data-toggle = 'modal' data-target='#modal-default'>" +
+           document.getElementById("LoadUserTable").innerHTML += "<tr onclick = 'TravelHistoryUpdate(\"" + JSON.stringify(Response[i]['UserID']) + "\")' style = 'cursor: pointer;' data-toggle = 'modal' data-target='#modal-default'>" +
                                                                      '<td>' + S_Response[i]['UserID'] + '</td>' +
                                                                      '<td>' + S_Response[i]['FirstName'] + '&nbsp' + S_Response[i]['LastName'] + '</td>' +
                                                                      '<td>' + S_Response[i]['Email'] + '</td>' + 
@@ -145,7 +145,7 @@ function TravelHistoryUpdate(UserID)
     var Obj, DbParam, XmlHttp;
 
     Obj = {
-        "UserID": UserID
+        "UserID": JSON.parse(UserID)
     };
 
     DbParam = JSON.stringify(Obj);
@@ -154,11 +154,12 @@ function TravelHistoryUpdate(UserID)
    XmlHttp.onreadystatechange = function() {
    if (this.readyState == 4 && this.status == 200)
    {
+       alert(this.responsText);
        S_Response = JSON.parse(this.responseText);
        document.getElementsByClassName("modal-title")[0].innerHTML = 'Travel History: User <span style="color:green">' + 
                                                                       S_Response[0]['UserID'] + '</div>';
        document.getElementById("TravelHistoryTable").innerHTML = '';
-       for(var i = 0; i < S_Response.length; i++ )
+       for(var i = 0; i < S_Response.length; i++)
        {
            document.getElementById("TravelHistoryTable").innerHTML += "<tr style = 'cursor: pointer;'>" + 
                                                                           '<td>' + S_Response[i]['BusName'] + '</td>' +
