@@ -112,6 +112,7 @@ function SignupHandler()
 
 function UserDataTableOnLoad()
 {
+    alert("Test");
     var Obj, DbParam, XmlHttp;
 
     DbParam = JSON.stringify(Obj);
